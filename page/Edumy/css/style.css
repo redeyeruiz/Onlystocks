@@ -7501,7 +7501,7 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
 .header_user_notif .user_notif {
   position: relative;
 }
-.header_user_notif .user_notif .dropdown-menu.notification_dropdown_content.show{
+.header_user_notif .user_notif .dropdown-menu.notification_dropdown_content.show {
   border: none;
   border-radius: 5px;
   margin-top: 25px;
@@ -7512,6 +7512,7 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
   box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   max-width: 340px;
 }
+
 .header_user_notif li.user_setting .dropdown-menu.notification_dropdown_content.show:before {
   background-color: #ffffff;
   content: "";
@@ -7529,6 +7530,7 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
   display: block;
   padding: 20px 0 0;
 }
+
 .header_user_notif .user_notif .so_heading:before {
   background-color: #ffffff;
   content: "";
@@ -7604,6 +7606,156 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
   max-height: 355px !important;
   width: 325px !important;
 }
+/* Index Notifications*/
+
+.sign_up_btnf {
+  margin-bottom: 0;
+  margin-top: 10px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sign_up_btn li{
+  display: inline-block;
+  vertical-align: middle;
+}
+.sign_up_btn li:first-child{
+  margin-right: 20px;
+}
+.sign_up_btn li:nth-child(2){
+  margin-right: 15px;
+}
+.header_user_notif li span{
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 2;
+}
+.sign_up_btn li .dropdown .notification_icon{
+  border-radius: 50%;
+  background-color: #e35a9a;
+  display: block;
+  height: 43px;
+  line-height: 40px;
+  text-align: center;
+  width: 43px;
+}
+
+.sign_up_btn li img {
+  width: 50px;
+}
+.sign_up_btn .user_notif {
+  position: relative;
+}
+.sign_up_btn .user_notif .dropdown-menu.notification_dropdown_content.show {
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: -270px !important;
+  padding: 30px 10px 25px 30px;
+  -webkit-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  -moz-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  max-width: 340px;
+}
+
+.sign_up_btn li.user_setting .dropdown-menu.notification_dropdown_content.show:before {
+  background-color: #ffffff;
+  content: "";
+  height: 37px;
+  position: absolute;
+  right: 40px;
+  width: 37px;
+  top: -7px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sign_up_btn .user_notif .dropdown-menu.notification_dropdown_content.show .view_all_noti{
+  display: block;
+  padding: 20px 0 0;
+}
+
+.sign_up_btn .user_notif .so_heading:before {
+  background-color: #ffffff;
+  content: "";
+  height: 37px;
+  position: absolute;
+  right: 30px;
+  width: 37px;
+  top: -7px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sign_up_btn .user_notif .so_heading p{
+  border-bottom: 1px solid #dedede;
+  color: #0a0a0a;
+  font-size: 18px;
+  font-family: "Nunito";
+  line-height: 1.333;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.sign_up_btn .user_notif .so_content {
+  max-height: 200px;
+}
+.sign_up_btn .user_notif .so_content .simplebar-offset{
+  width: auto;
+}
+.sign_up_btn .user_notif .so_content ul{
+  margin-bottom: 0;
+}
+.sign_up_btn .user_notif .so_content ul li {
+  border-bottom: 1px solid #dedede;
+  padding: 20px 0 20px;
+}
+.sign_up_btn .user_notif .so_content ul li h5,
+.sign_up_btn .user_notif .so_content ul li p{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.sign_up_btn .user_notif .so_content ul li p{
+  color: #7f7f7f;
+}
+.sign_up_btn .user_notif .so_content ul li:first-child {
+  margin-right: 0;
+}
+.sign_up_btn .user_notif .so_content ul li:last-child {
+  border-bottom: none;
+}
+.sign_up_btn .user_notif {
+  padding: 0;
+}
+.sign_up_btn .user_notif .simplebar-offset:focus {
+  outline: none;
+}
+.sign_up_btn .user_notif .simplebar-offset::-webkit-scrollbar {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 6px;
+  z-index: 3;
+}
+.sign_up_btn .user_notif .simplebar-offset::-webkit-scrollbar * {
+  background:transparent;
+}
+.sign_up_btn .user_notif .simplebar-offset::-webkit-scrollbar-track {
+  display: none;
+}
+.sign_up_btn .user_notif .simplebar-offset::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf !important; // manage scrollbar thumb background color here
+  border-radius: 6px;
+}
+.simplebar-placeholder {
+  max-height: 355px !important;
+  width: 325px !important;
+}
+
+/*  ------------------------------*/
+
 /*== Header User Setting ID ==*/
 .header_user_notif li.user_setting {
   position: relative;
@@ -7661,10 +7813,10 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
   color: rgb(126, 126, 126);
   line-height: 1.2;
 }
-.header_user_notif li.user_setting .dropdown-menu .user_setting_content {
+.header_user_notif li.user_setting .dropdown-menu .user_setting_content  {
   padding: 15px 0 0;
 }
-.header_user_notif li.user_setting .dropdown-menu .user_setting_content a {
+.header_user_notif li.user_setting .dropdown-menu .user_setting_content a  {
   border-bottom: 1px solid #dedede;
   color: #0a0a0a;
   font-size: 16px;
