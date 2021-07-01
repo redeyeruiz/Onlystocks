@@ -2713,7 +2713,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   line-height: 40px;
 }
 .home1-divider2 {
-  background-image: url(../images/background/3.jpg);
+  background-image: url(../images/background/money_hands.jpg);
   -webkit-background-size: cover;
   background-position: center center;
   background-size: cover;
@@ -10469,7 +10469,7 @@ ul.mc_parent_list ul.mc_child_list:hover .pricing_btn{
 }
 /*== BackGround Images ==*/
 .bg-img2 {
-  background-image: url("../images/background/2.jpg");
+  background-image: url("../images/background/phone_laptop.jpg");
 }
 .bg-img5 {
   background-attachment: scroll;
