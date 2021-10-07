@@ -12109,3 +12109,10 @@ textarea.form-control{
 .notification-num{
   color: #ffffff;
 }
+
+/*INSTRUCTOR IMG*/
+
+.instructor-img{
+  height: 200px;
+  width: 200px;
+}
