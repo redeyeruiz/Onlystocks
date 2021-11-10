@@ -4,7 +4,7 @@
   "description": "Web app for all investements",
   "main": "index.html",
   "scripts": {
-    "startÑ": "npm run lite",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
