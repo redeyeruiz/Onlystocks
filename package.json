@@ -1,24 +1,10 @@
 {
-  "name": "only-investments",
-  "version": "1.0.0",
-  "description": "Web app for all investements",
-  "main": "index.html",
-  "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+  "scripts":{
+    "start":"node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/redeyeruiz/Onlystocks.git"
-  },
-  "author": "Ruben Ruiz Calva",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/redeyeruiz/Onlystocks/issues"
-  },
-  "homepage": "https://github.com/redeyeruiz/Onlystocks#readme",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }

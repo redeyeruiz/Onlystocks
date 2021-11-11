@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.defaultWebAppToDeploy": "/subscriptions/e6ea8cea-8bbd-4254-9eae-0ea319b32632/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/OnlyInvestMents",
+    "appService.deploySubpath": "."
 }
