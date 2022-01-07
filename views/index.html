@@ -17,7 +17,7 @@
 <!-- Favicon -->
 <link href="../images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="../images/favicon.ico" sizes="128x128" rel="shortcut icon" />
-
+<script src="https://kit.fontawesome.com/edd32300fd.js" crossorigin="anonymous"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,205 +33,26 @@
 	<header class="header-nav menu_style_home_one navbar-scrolltofixed stricky main-menu">
 		<div class="container-fluid">
 		    <!-- Ace Responsive Menu -->
-		    <nav>
-		        <!-- Menu Toggle btn-->
-		        <div class="menu-toggle">
-		            <img class="nav_logo_img img-fluid" src="../images/header-logo.png" alt="header-logo.png">
-		            <button type="button" id="menu-btn">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-		        </div>
-		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="../images/header-logo.png" alt="header-logo.png">
-		            <img class="logo2 img-fluid" src="../images/header-logo2.png" alt="header-logo2.png">
-		            <span>Only Investments</span>
-		        </a>
-		        <!-- Responsive Menu Structure-->
-		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
-		        <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-		            <li>
-		                <a href="index.html"><span class="title">Home</span></a>
-
-		            </li>
-		            <li>
-		                <a href="#"><span class="title">Courses</span></a>
-		                <!-- Level Two-->
-	                	<ul>
-		                    <li>
-		                        <a href="page-course-v2.html">Explorar Cursos</a>
-
-		                    </li>
-		                    <li>
-		                        <a href="page-course-single-v2.html">Courses Single</a>
-		                    </li>
-                            <li><a href="page-instructors.html">Instructores</a></li>
-		                    <li><a href="page-instructors-single.html">Instructor Single</a></li>
-	                	</ul>
-		            </li>
-		            <li>
-		                <a href="#"><span class="title">Events</span></a>
-		                <ul>
-		                    <li><a href="page-event.html">Explorar Eventos</a></li>
-		                    <li><a href="page-event-single.html">Event Single</a></li>
-		                </ul>
-		            </li>
-		            <li>
-		                <a href="#"><span class="title">Pages</span></a>
-		                <ul>
-				            <li>
-				                <a href="#"><span class="title">Shop Pages</span></a>
-				                <ul>
-				                    <li><a href="page-shop.html">Shop</a></li>
-				                    <li><a href="page-shop-single.html">Shop Single</a></li>
-				                    <li><a href="page-shop-cart.html">Cart</a></li>
-				                    <li><a href="page-shop-checkout.html">Checkout</a></li>
-				                    <li><a href="page-shop-order.html">Order</a></li>
-				                </ul>
-				            </li>
-				            <li>
-				                <a href="#"><span class="title">User Admin</span></a>
-				                <ul>
-				                    <li><a href="page-dashboard.html">Dashboard</a></li>
-				                    <li><a href="page-my-courses.html">My Courses</a></li>
-				                    <li><a href="page-my-order.html">My Order</a></li>
-				                    <li><a href="page-my-message.html">My Message</a></li>
-									<li><a href="page-my-group.html">Groups</a></li>
-				                    <li><a href="page-my-review.html">My Review</a></li>
-				                    <li><a href="page-my-bookmarks.html">My Bookmarks</a></li>
-				                    <li><a href="page-my-listing.html">My Listing</a></li>
-				                    <li><a href="page-my-setting.html">My Setting</a></li>
-		                        </ul>
-				            </li>
-		                    <li><a href="page-about.html">About Us</a></li>
-		                    <li><a href="page-gallery.html">Gallery</a></li>
-		                    <li><a href="page-faq.html">Faq</a></li>
-		                    <li><a href="page-login.html">LogIn</a></li>
-		                    <li><a href="page-register.html">Register</a></li>
-		                    <li><a href="page-pricing.html">Membership</a></li>
-		                    <li><a href="page-error.html">404 Page</a></li>
-		                    <li><a href="page-terms.html">Terms and Conditions</a></li>
-		                    <li><a href="page-become-instructor.html">Become an Instructor</a></li>
-		                    <li><a href="page-ui-element.html">UI Elements</a></li>
-		                </ul>
-		            </li>
-		            <li>
-		                <a href="#"><span class="title">Blog</span></a>
-		                <ul>
-		                    <li><a href="page-blog-v1.html">Blog List 1</a></li>
-		                    <li><a href="page-blog-grid.html">Blog List 2</a></li>
-		                    <li><a href="page-blog-list.html">Blog List 3</a></li>
-		                    <li><a href="page-blog-single.html">Single Post</a></li>
-		                </ul>
-		            </li>
-		            <li class="last">
-		                <a href="page-contact.html"><span class="title">Contact</span></a>
-		            </li>
-		        </ul>
-				
-		        <ul class="  sign_up_btn pull-right dn-smd mt20 ">
-	                <li class="list-inline-item list_s"><a href="#" class="btn flaticon-user" data-toggle="modal" data-target="#exampleModalCenter"> <span class="dn-lg">Login / Register</span></a></li>
-	                <li class="list-inline-item list_s">
-	                	<div class="cart_btn">
-							<ul class="cart">
-								<li>
-									<a href="#" class="btn cart_btn flaticon-shopping-bag"><span>5</span></a>
-									<ul class="dropdown_content">
-										<li class="list_content">
-											<a href="#">
-												<img class="float-left" src="http://via.placeholder.com/50x50" alt="50x50">
-												<p>Dolar Sit Amet</p>
-												<small>1 × $7.90</small>
-												<span class="close_icon float-right"><i class="fa fa-plus"></i></span>
-											</a>
-										</li>
-										<li class="list_content">
-											<a href="#">
-												<img class="float-left" src="http://via.placeholder.com/50x50" alt="50x50">
-												<p>Lorem Ipsum</p>
-												<small>1 × $7.90</small>
-												<span class="close_icon float-right"><i class="fa fa-plus"></i></span>
-											</a>
-										</li>
-										<li class="list_content">
-											<a href="#">
-												<img class="float-left" src="http://via.placeholder.com/50x50" alt="50x50">
-												<p>Is simply</p>
-												<small>1 × $7.90</small>
-												<span class="close_icon float-right"><i class="fa fa-plus"></i></span>
-											</a>
-										</li>
-										<li class="list_content">
-											<h5>Subtotal: $57.70</h5>
-											<a href="#" class="btn btn-thm cart_btns">View cart</a>
-											<a href="#" class="btn btn-thm3 checkout_btns">Checkout</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-	                </li>
-					
-					<li class="user_notif list-inline-item list_s">
-						<div class="dropdown">
-						    <a class="   btn cart_btn flaticon-alarm" href="#" data-toggle="dropdown"> <span class ="notification-num ">3</span></a>
-						    <div class="dropdown-menu notification_dropdown_content">
-								<div class="so_heading">
-									<p>Notifications</p>
-								</div>
-								<div class="so_content" data-simplebar="init">
-									<ul>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-										<li>
-											<h5>Status Update</h5>
-											<p>This is an automated server response message. All systems are online.</p>
-										</li>
-									</ul>
-								</div>
-								<a class="view_all_noti text-thm" href="#">View all alerts</a>
-						    </div>
-						</div>
-	                </li>
-					
-					<li class="list-inline-item list_s">
-						<div class="search_overlay">
-							 <a id="search-button-listener" class="mk-search-trigger mk-fullscreen-trigger" href="#">
-								<span id="search-button"><i class="flaticon-magnifying-glass"></i></span>
-							 </a>
-						</div>
-					</li> 
-					
-					
-	            </ul><!-- Button trigger modal -->
-				
-		    </nav>
-			
+            <div class="menu-toggle">
+                <img class="nav_logo_img img-fluid" src="../images/header-logo.png" alt="header-logo.png">
+                <button type="button" id="menu-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a href="#" class="navbar_brand float-left dn-smd">
+                <img class="logo1 img-fluid" src="https://cdn.discordapp.com/attachments/837489474983428159/928896812532777010/IMG_20220107_000255.jpg" alt="header-logo.png" width="110">
+                <img class="logo2 img-fluid" src="https://cdn.discordapp.com/attachments/837489474983428159/928896812532777010/IMG_20220107_000255.jpg" alt="header-logo2.png" width="110">
+                <span>
+					<div class="courses_all_btn text-right align-text-top">
+						<a class="btn btn-transparent" href="#pre-registro"> Pre-regístrate ya</a>
+					</div>
+				</span>
+            </a>
 		</div>
 	</header>
+
 	<!-- Modal -->
 	<div class="sign_up_modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
 	  	<div class="modal-dialog modal-dialog-centered" role="document">
@@ -363,34 +184,41 @@
 		</div><!-- /.mobile-menu -->
 		<nav id="menu" class="stylehome1">
 			<ul>
-				<li><a href="index.html"></a><span>Home</span>
-					<!--
+				<li><span>Home</span>
 	                <ul>
 	                    <li><a href="index.html">Home 1</a></li>
+	                    <li><a href="index2.html">Home 2</a></li>
+	                    <li><a href="index3.html">Home 3</a></li>
+	                    <li><a href="index4.html">Home 4</a></li>
+	                    <li><a href="index5.html">Home 5</a></li>
+	                    <li><a href="index6.html">Home - University</a></li>
+	                    <li><a href="index7.html">Home College</a></li>
+	                    <li><a href="index8.html">Home Kindergarten</a></li>
 	                </ul>
-					-->
 				</li>
 				<li><span>Courses</span>
 					<ul>
-						<li><span>Explorar List</span>
+						<li><span>Courses List</span>
 							<ul>
+	                            <li><a href="page-course-v1.html">Courses v1</a></li>
 	                            <li><a href="page-course-v2.html">Courses v2</a></li>
+	                            <li><a href="page-course-v3.html">Courses v3</a></li>
 							</ul>
 						</li>
 						<li><span>Courses Single</span>
 							<ul>
 	                            <li><a href="page-course-single-v1.html">Single V1</a></li>
 	                            <li><a href="page-course-single-v2.html">Single V2</a></li>
-	                            <li><a href="page-course-single-v3.html">Single V3 </a></li>
+	                            <li><a href="page-course-single-v3.html">Single V3</a></li>
 							</ul>
 						</li>
-                        <li><a href="page-instructors.html">Instructores </a></li>
+                        <li><a href="page-instructors.html">Instructors</a></li>
 		                <li><a href="page-instructors-single.html">Instructor Single</a></li>
 					</ul>
 				</li>
 				<li><span>Events</span>
 					<ul>
-						<li><a href="page-event.html">Explorar Eventos</a></li>
+						<li><a href="page-event.html">Event List</a></li>
 						<li><a href="page-event-single.html">Event Single</a></li>
 					</ul>
 				</li>
@@ -445,91 +273,45 @@
 		</nav>
 	</div>
 
-	<!-- 2nd Home Slider -->
-	<div class="home1-mainslider">
-		<div class="container-fluid p0">
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="main-banner-wrapper">
-					    <div class="banner-style-one owl-theme owl-carousel">
-					        <div class="slide slide-one" style="background-image: url(images/home/cafe_compu.jpg); height: 95vh;">
-					            <div class="container">
-					                <div class="row home-content">
-					                    <div class="col-lg-12 text-center p0">
-					                        <h3 class="banner-title">Self EducatIon Resources and Infos</h3>
-					                        <p>Technology is brining a massive wave of evolution on learning things on different ways.</p>
-					                        <div class="btn-block"><a href="#" class="banner-btn">Ready to get Started?</a></div>
-					                    </div>
-					                </div>
-					            </div>
-					        </div>
-					        <div class="slide slide-one" style="background-image: url(images/home/stonkboard.jpg);height: 95vh;">
-					            <div class="container">
-					                <div class="row home-content">
-					                    <div class="col-lg-12 text-center p0">
-					                        <h3 class="banner-title">Self EducatIon Resources and Infos</h3>
-					                        <p>Technology is brining a massive wave of evolution on learning things on different ways</p>
-					                        <div class="btn-block"><a href="#" class="banner-btn">Ready to get Started?</a></div>
-					                    </div>
-					                </div>
-					            </div>
-					        </div>
-					        <div class="slide slide-one" style="background-image: url(images/home/bull.jpg);height: 95vh;">
-					            <div class="container">
-					                <div class="row home-content">
-					                    <div class="col-lg-12 text-center p0">
-					                        <h3 class="banner-title">Find the Best Courses</h3>
-					                        <p>Technology is brining a massive wave of evolution on learning things on different ways</p>
-					                        <div class="btn-block"><a href="#" class="banner-btn">Ready to get Started?</a></div>
-					                    </div>
-					                </div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="carousel-btn-block banner-carousel-btn">
-					        <span class="carousel-btn left-btn"><i class="flaticon-left-arrow left"></i> <span class="left">PR <br> EV</span></span>
-					        <span class="carousel-btn right-btn"><span class="right">NE <br> XT</span> <i class="flaticon-right-arrow-1 right"></i></span>
-					    </div><!-- /.carousel-btn-block banner-carousel-btn -->
-					</div><!-- /.main-banner-wrapper -->
+				<div class="col-xl-7 offset-xl-3 text-center">
+					<div class="breadcrumb_content">
+                        
+						<h3 class="breadcrumb_title mt0"> ESTAMOS PREPARANDO UNA COMUNIDAD PARA TI </h4>
+
+                        <div class="col-lx-7 offset-lg-2 text-center"></div>
+                            <br>
+                            <p class="color-white"> ¿TUS AMIGOS SE LA PASAN HABLANDO DE CRYPTO O INVERSIONES Y TE QUIERES ENTERAR? 
+                            <p class="color-white"></p>
+                            <br >
+                        </div>
+				        
+                    </div>
 				</div>
 			</div>
 		</div>
-		<div class="container home_iconbox_container">
+	</section>
+
+    <!-- Divider -->
+	<section class="divider_home1 bg-img2 parallax" data-stellar-background-ratio="0.3">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="row">
-						<div class="col-sm-6 col-lg-3">
-							<div class="home_icon_box">
-								<div class="icon instructor-img"><img height="200px" src="../images/team/instructor1.jpg" alt="instructor1.jpg"></div>
-								<p>Learn From The Experts</p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="home_icon_box">
-								<div class="icon instructor-img"><img height="180px"  width="280px"src="../images/team/professor.jpg" alt="cafe_compu.png"></div>
-								<p>Book Library & Store</p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="home_icon_box">
-								<div class="icon instructor-img"><img height="200px" src="../images/team/instructor3.jpg" alt="instructor3.jpg"></div>
-								<p>Worldwide Recognize</p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="home_icon_box">
-								<div class="icon instructor-img"><img src="../images/team/instructor4.jpg" alt="instructor4.jpg"></div>
-								<p>Best Industry Leaders</p>
-							</div>
-						</div>
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="divider-one">
+						<p class="color-white">COMIENZA TU APRENDIZAJE ONLINE</p>
+						<h1 class="color-white text-uppercase">Convive con personas relevantes del mundo de las inversiones</h1>
+						<a class="btn btn-transparent divider-btn" href="#pre-registro">Comienza ya</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- School Category Courses -->
-	<section id="our-courses" class="our-courses pt90 pt650-992">
+    <!-- Semblanza -->
+    <section id="our-courses" class="our-courses pt90 pt650-992">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -545,697 +327,145 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="main-title text-center">
-						<h3 class="mt0">Via School Categories Courses</h3>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+						<h3 class="mt0"> ¿Qué ofrece OnlyInvestments?</h3>
+						<p>Una comunidad para tí.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_bitcoin.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Design</h5>
-								<p>Over 800 Courses</p>
+								<h5>Stock</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_graficos.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1641197408799-262f1f343cc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Business</h5>
-								<p>Over 1,400 Courses</p>
+								<h5>Crypto</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_bitcoin.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1619886943862-7e4e4bbd1d02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Software Development</h5>
-								<p>Over 350 Courses</p>
+								<h5>Alertas Exclusivas</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_graficos.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1618044733300-9472054094ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Web Development</h5>
-								<p>Over 640 Courses</p>
+								<h5>Recursos educativos</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_bitcoin.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1504607798333-52a30db54a5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Photography</h5>
-								<p>Over 740 Courses</p>
+								<h5>Insignias</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_graficos.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Audio + Music</h5>
-								<p>Over 120 Courses</p>
+								<h5>Giveaways</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_bitcoin.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>Marketing</h5>
-								<p>Over 200 Courses</p>
+								<h5>Educadores comprometidos</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="img_hvr_box" style="background-image: url(images/courses/curso_graficos.jpg);">
+					<div class="img_hvr_box" style="background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);">
 						<div class="overlay">
 							<div class="details">
-								<h5>3D + Animation</h5>
-								<p>Over 900 Courses</p>
+								<h5>Comunidad activa</h5>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6 offset-lg-3">
 					<div class="courses_all_btn text-center">
-						<a class="btn btn-transparent" href="#">View All Courses</a>
+						<a class="btn btn-transparent" href="#pre-registro"> Pre-regístrate ya</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Divider -->
+    <!-- Divider -->
 	<section class="divider_home1 bg-img2 parallax" data-stellar-background-ratio="0.3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="divider-one">
-						<p class="color-white">STARTING ONLINE LEARNING</p>
-						<h1 class="color-white text-uppercase">Enhance your skIlls wIth best OnlIne courses</h1>
-						<a class="btn btn-transparent divider-btn" href="#">Get Started Now</a>
+						<p class="color-white">ASCIENDE A LA NUEVA ERA</p>
+						<h1 class="color-white text-uppercase">Pon a trabajar tu dinero con estrategias y metas</h1>
+						<a class="btn btn-transparent divider-btn" href="#pre-registro">Comienza ya</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Top Courses -->
-	<section id="top-courses" class="top-courses pb30">
+	<!-- Email Register -->
+	<section class="our-log bgc-fa" id="pre-registro">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h3 class="mt0">Browse Our Top Instructors</h3>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-			 	<div class="col-lg-12">
-			 		<div id="options" class="alpha-pag full">
-						<div class="option-isotop">
-							<ul id="filter" class="option-set" data-option-key="filter">
-								<li class="list-inline-item"><a href="#all" data-option-value="*" class="selected">Developer</a></li>
-								<li class="list-inline-item"><a href="#business" data-option-value=".business">Business</a></li>
-								<li class="list-inline-item"><a href="#design" data-option-value=".design">Design</a></li>
-								<li class="list-inline-item"><a href="#web" data-option-value=".web">Web</a></li>
-								<li class="list-inline-item"><a href="#marketing" data-option-value=".marketing">Marketing</a></li>
-							</ul>
-						</div>
-					</div><!-- FILTER BUTTONS -->
-			 		<div class="emply-text-sec">
-			 			<div class="row" id="masonry_abc">
-			 				<div class="col-md-6 col-lg-4 col-xl-3 business design">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor1.jpg" alt="instructor1.jpg">
-										<div class="overlay">
-											<div class="tag">Best Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Introduction Web Design with HTML</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 business marketing">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor2.jpg" alt="instructor2.jpg">
-										<div class="overlay">
-											<div class="tag">Top Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Designing a Responsive Mobile Website with Muse</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 web design">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor3.jpg" alt="instructor3.jpg">
-										<div class="overlay">
-											<div class="tag">Top Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Adobe XD: Prototyping Tips and Tricks</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 business Web">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor4.jpg" alt="instructor4.jpg">
-										<div class="overlay">
-											<div class="tag">Best Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Sketch: Creating Responsive SVG</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 marketing">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor5.jpg" alt="team/instructor5.jpg">
-										<div class="overlay">
-											<div class="tag">Best Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Design Instruments for Communication</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 business marketing">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor1.jpg" alt="instructor1.jpg">
-										<div class="overlay">
-											<div class="tag">Top Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>How to be a DJ? Make Electronic Music</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 design Web">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor2.jpg" alt="instructor2.jpg">
-										<div class="overlay">
-											<div class="tag">Top Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>How to Make Beautiful Landscape Photos?</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 				<div class="col-md-6 col-lg-4 col-xl-3 business">
-								<div class="top_courses">
-									<div class="thumb">
-										<img class="img-whp" src="../images/team/instructor4.jpg" alt="instructor4.jpg">
-										<div class="overlay">
-											<div class="tag">Best Seller</div>
-											<div class="icon"><span class="flaticon-like"></span></div>
-											<a class="tc_preview_course" href="#">Preview Course</a>
-										</div>
-									</div>
-									<div class="details">
-										<div class="tc_content">
-											<p>Ali TUFAN</p>
-											<h5>Fashion Photography From Professional</h5>
-											<ul class="tc_review">
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-												<li class="list-inline-item"><a href="#">(6)</a></li>
-											</ul>
-										</div>
-										<div class="tc_footer">
-											<ul class="tc_meta float-left">
-												<li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
-												<li class="list-inline-item"><a href="#">1548</a></li>
-												<li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
-												<li class="list-inline-item"><a href="#">25</a></li>
-											</ul>
-											<div class="tc_price float-right">$69.95</div>
-										</div>
-									</div>
-								</div>
-			 				</div>
-			 			</div>
-			 		</div>
-				</div>
-			</div>
-		</div>
-	</section>
+				<div class="col-sm-12 col-lg-6 offset-lg-3">
+					<div class="login_form inner_page">
+						<form action="#">
+							<div class="heading">
+								<h3 class="text-center">Pre-registro</h3>
+								<p class="text-center">Te avisaremos por mail cuando ya puedas probarlo ;)</p>
+							</div>
+							 <div class="form-group">
+						    	<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email Address">
+							</div>
+							<button type="submit" class="btn btn-log btn-block btn-thm2">Regístrate</button>
 
-	<!-- Our Testimonials -->
-	<section id="our-testimonials" class="our-testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h3 class="mt0">What People Say</h3>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="testimonialsec">
-						<ul class="tes-nav">
-							<li>
-								<img class="img-fluid" src="../images/testimonial/business_partners.jpg" alt="business_partners.jpg"/>
-							</li>
-							<li>
-								<img class="img-fluid" src="../images/testimonial/money_woman.jpg" alt="2.money_woman.jpg"/>
-							</li>
-							<li>
-								<img class="img-fluid" src="../images/testimonial/business_partners.jpg" alt="business_partners.jpg"/>
-							</li>
-							<li>
-								<img class="img-fluid" src="../images/testimonial/money_woman.jpg" alt="money_woman.jpg"/>
-							</li>
-						</ul>
-						<ul class="tes-for">
-							<li>
-								<div class="testimonial_item">
-									<div class="details">
-										<h5>Ali Tufan</h5>
-										<span class="small text-thm">Client</span>
-										<p>Customization is very easy with this theme. Clean and quality design and full support for any kind of request! Great theme!</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="testimonial_item">
-									<div class="details">
-										<h5>Ali Tufan</h5>
-										<span class="small text-thm">Client</span>
-										<p>Customization is very easy with this theme. Clean and quality design and full support for any kind of request! Great theme!</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="testimonial_item">
-									<div class="details">
-										<h5>Ali Tufan</h5>
-										<span class="small text-thm">Client</span>
-										<p>Customization is very easy with this theme. Clean and quality design and full support for any kind of request! Great theme!</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="testimonial_item">
-									<div class="details">
-										<h5>Ali Tufan</h5>
-										<span class="small text-thm">Client</span>
-										<p>Customization is very easy with this theme. Clean and quality design and full support for any kind of request! Great theme!</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+							<div class="divide" hidden>
+								<span class="lf_divider">ó</span>
+								<hr>
+							</div>
 
-	<!-- Our Blog -->
-	<section class="our-blog">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h3 class="mt0">Latest News And Events</h3>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-xl-6">
-					<div class="blog_slider_home1">
-						<div class="item">
-							<div class="blog_post one">
-								<div class="thumb">
-									<div class="post_title">Events</div>
-									<img class="img-fluid w100" src="../images/blog/pig_house.jpg" alt="pig_house.jpg">
-									<a class="post_date" href="#"><span>28 <br> March</span></a>
+							<div class="row mt40" hidden>
+								<div class="col-lg">
+									<button type="submit" class="btn btn-block color-white bgc-fb mb0"><i class="fa fa-facebook float-left mt5"></i> Facebook</button>
 								</div>
-								<div class="details">
-									<div class="post_meta">
-										<ul>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-calendar"></i> 8:00 am - 5:00 pm</a></li>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-placeholder"></i> Vancouver, Canada</a></li>
-										</ul>
-									</div>
-									<h4>Elegant Light Box Paper Cut Dioramas New Design Conference</h4>
+								<div class="col-lg">
+									<button type="submit" class="btn btn2 btn-block color-white bgc-gogle mb0"><i class="fa fa-google float-left mt5"></i> Google</button>
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<div class="blog_post one">
-								<div class="thumb">
-									<div class="post_title">Events</div>
-									<img class="img-fluid w100" src="../images/blog/baseball.jpg" alt="baseball.jpg">
-									<a class="post_date" href="#"><span>28 <br> March</span></a>
-								</div>
-								<div class="details">
-									<div class="post_meta">
-										<ul>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-calendar"></i> 8:00 am - 5:00 pm</a></li>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-placeholder"></i> Vancouver, Canada</a></li>
-										</ul>
-									</div>
-									<h4>Elegant Light Box Paper Cut Dioramas New Design Conference</h4>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="blog_post one">
-								<div class="thumb">
-									<div class="post_title">Events</div>
-									<img class="img-fluid w100" src="../images/blog/bitcoin_laptop.jpg" alt="bitcoin_laptop.jpg">
-									<a class="post_date" href="#"><span>28 <br> March</span></a>
-								</div>
-								<div class="details">
-									<div class="post_meta">
-										<ul>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-calendar"></i> 8:00 am - 5:00 pm</a></li>
-											<li class="list-inline-item"><a href="#"><i class="flaticon-placeholder"></i> Vancouver, Canada</a></li>
-										</ul>
-									</div>
-									<h4>Elegant Light Box Paper Cut Dioramas New Design Conference</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 col-xl-3">
-					<div class="blog_post">
-						<div class="thumb">
-							<img class="img-fluid w100" src="../images/blog/planning.jpg" alt="planning.jpg">
-							<a class="post_date" href="#">July 21, 2019</a>
-						</div>
-						<div class="details">
-							<h5>Marketing</h5>
-							<h4>A Solution Built for Teachers</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 col-xl-3">
-					<div class="blog_post">
-						<div class="thumb">
-							<img class="img-fluid w100" src="../images/blog/working.jpg" alt="working.jpg">
-							<a class="post_date" href="#">July 21, 2019</a>
-						</div>
-						<div class="details">
-							<h5>Business</h5>
-							<h4>An Overworked Newspaper Editor</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt50">
-				<div class="col-lg-12">
-					<div class="read_more_home text-center">
-						<h4>Like what you see? <a href="#">See more posts<span class="flaticon-right-arrow pl10"></span></a></h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Popular Job Categories -->
-	<section class="home1-divider2 parallax" data-stellar-background-ratio="0.3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7 col-lg-7">
-					<div class="app_grid">
-						<h1 class="mt0">Download & Enjoy</h1>
-						<p>Access your courses anywhere, anytime & prepare<br> with practice tests.</p>
-						<button class="apple_btn btn-transparent">
-							<span class="icon">
-								<span class="flaticon-apple"></span>
-							</span>
-							<span class="title">App Store</span>
-							<span class="subtitle">Available now on the</span>
-						</button>
-						<button class="play_store_btn btn-transparent">
-							<span class="icon">
-								<span class="flaticon-google-play"></span>
-							</span>
-							<span class="title">Google Play</span>
-							<span class="subtitle">Get in on</span>
-						</button>
-					</div>
-				</div>
-				<div class="col-md-5 col-lg-5">
-					<div class="phone_img">
-						<img class="img-fluid" src="../images/resource/bull_portrait.jpg" alt="bull_portrait.png">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Our Partners -->
-	<section id="our-partners" class="our-partners">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h3 class="mt0">Need To Train Your Team?</h3>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="../images/partners/1.png" alt="1.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="../images/partners/2.png" alt="2.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="../images/partners/3.png" alt="3.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="../images/partners/4.png" alt="4.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="../images/partners/5.png" alt="5.png">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Our Newslatters -->
-	<section id="our-newslatters" class="our-newslatters">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h3 class="mt0">Get Newsletter</h3>
-						<p>Your download should start automatically, if not Click here. Should I give up, huh?.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="footer_apps_widget_home1">
-						<form class="form-inline mailchimp_form">
-							<input type="email" class="form-control" placeholder="Email address">
-							<button type="submit" class="btn btn-lg btn-thm dbxshad">Get it now <span class="flaticon-right-arrow-1"></span></button>
 						</form>
 					</div>
 				</div>
@@ -1247,63 +477,46 @@
 	<section class="footer_one">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 col-md-3 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-md-3 col-lg-4">
 					<div class="footer_contact_widget">
-						<h4>CONTACT</h4>
-						<p>329 Queensberry Street, North Melbourne </p>
-						<p>VIC 3051, Australia.</p>
-						<p>123 456 7890</p>
-						<p>support@Only Investments.com</p>
+						<h4>CONTACTO</h4>
+						<p>Si quieres que crear tu propia comunidad escribenos al correo:</p>
+						<p>only.investments21@gmail.com</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
-					<div class="footer_company_widget">
-						<h4>COMPANY</h4>
-						<ul class="list-unstyled">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="page-contact.html">Contact</a></li>
-							<li><a href="#">Become a Teacher</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
-					<div class="footer_program_widget">
-						<h4>PROGRAMS</h4>
-						<ul class="list-unstyled">
-							<li><a href="#">Nanodegree Plus</a></li>
-							<li><a href="#">Veterans</a></li>
-							<li><a href="#">Georgia</a></li>
-							<li><a href="#">Self-Driving Car</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+				<div class="col-sm-6 col-md-3 col-md-3 col-lg-4" >
 					<div class="footer_support_widget">
-						<h4>SUPPORT</h4>
+						<h4>SOPORTE</h4>
 						<ul class="list-unstyled">
-							<li><a href="#">Documentation</a></li>
-							<li><a href="#">Forums</a></li>
-							<li><a href="#">Language Packs</a></li>
-							<li><a href="#">Release Status</a></li>
+							<li><a href="#">Aviso de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-md-3 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-md-3 col-lg-4">
+					<div class="footer_company_widget">
+						<h4>NUESTRAS REDES</h4>
+						<ul class="list-unstyled">
+							<li class="list-inline-item"><a href="https://www.instagram.com/onlyinvestmentsmx/?hl=es"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://vm.tiktok.com/ZM8EA2Sr9/"><i class="fab fa-tiktok"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-md-3 col-lg-3" hidden>
 					<div class="footer_apps_widget">
 						<h4>MOBILE</h4>
 						<div class="app_grid">
 							<button class="apple_btn btn-dark">
-								<span class="icon">
+								<div class="icon">
 									<span class="flaticon-apple"></span>
-								</span>
+								</div>
 								<span class="title">App Store</span>
 								<span class="subtitle">Available now on the</span>
 							</button>
 							<button class="play_store_btn btn-dark">
-								<span class="icon">
+								<div class="icon">
 									<span class="flaticon-google-play"></span>
-								</span>
+								</div>
 								<span class="title">Google Play</span>
 								<span class="subtitle">Get in on</span>
 							</button>
@@ -1314,8 +527,8 @@
 		</div>
 	</section>
 
-	<!-- Our Footer Middle Area -->
-	<section class="footer_middle_area p0">
+	<!-- Our Footer Middle Area / hidden -->
+	<section class="footer_middle_area p0" hidden>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 pb15 pt15">
@@ -1340,9 +553,9 @@
 						<ul>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/onlyinvestmentsmx/?hl=es"><i class="fa fa-instagram"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li class="list-inline-item"><a href="https://vm.tiktok.com/ZM8EA2Sr9/"><i class="fab fa-tiktok"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
 						</ul>
 					</div>
@@ -1357,7 +570,7 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="copyright-widget text-center">
-						<p>Copyright Only Investments © 2019. All Rights Reserved.</p>
+						<p>Copyright Only Investments © 2022. Todos los derechos reservados.</p>
 					</div>
 				</div>
 			</div>
@@ -1373,7 +586,6 @@
 <script type="text/javascript" src="../js/jquery.mmenu.all.js"></script>
 <script type="text/javascript" src="../js/ace-responsive-menu.js"></script>
 <script type="text/javascript" src="../js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="../js/isotop.js"></script>
 <script type="text/javascript" src="../js/snackbar.min.js"></script>
 <script type="text/javascript" src="../js/simplebar.js"></script>
 <script type="text/javascript" src="../js/parallax.js"></script>
@@ -1384,6 +596,7 @@
 <script type="text/javascript" src="../js/progressbar.js"></script>
 <script type="text/javascript" src="../js/slider.js"></script>
 <script type="text/javascript" src="../js/timepicker.js"></script>
+<script type="text/javascript" src="../js/wow.min.js"></script>
 <!-- Custom script for all pages --> 
 <script type="text/javascript" src="../js/script.js"></script>
 </body>
