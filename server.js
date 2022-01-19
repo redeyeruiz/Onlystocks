@@ -50,13 +50,13 @@ app.set('view engine','ejs')
 app.use(express.urlencoded({ extended: false}))
 app.use(flash())
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret:  'secret',
     resave: false,
     saveUninitialized: false
 }))
-
+// app.use(session({ secret: 'secret' }));
 app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.session())
 conn.connect(function(err){
     if (err) {
         console.log("error connecting: " + err.stack);
