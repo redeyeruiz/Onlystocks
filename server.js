@@ -12,7 +12,7 @@ const bcrypt = require('bcrypt')
 const SQL = require('sql-template-strings')
 const passport = require('passport')
 const flash = require('express-flash')
-var session = require('cookie-session');
+var session = require('express-session');
 
 const initializePassport = require('./passport-config')
 initializePassport(
