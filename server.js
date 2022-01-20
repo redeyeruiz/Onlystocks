@@ -17,7 +17,7 @@ var session = require('express-session');
 var AzureTablesStoreFactory = require('connect-azuretables')(session);
 var options = {table: 'sessionTable2',
             sessionTimeOut: 720,
-            storageAccount: '<landingpage01',
+            storageAccount: 'landingpage01',
             accessKey: 'm4TAf7GkwXIVHxhsDj8yJ/+aVeCRJ9c3orjeLftzswA3XLtKZPo+6VG2yWEvyzWESiJpuuVXPnsIXuxKg8shlg=='
 }; // <-- connect-azuretables options go here
 
