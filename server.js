@@ -14,6 +14,12 @@ const passport = require('passport')
 const flash = require('express-flash')
 var session = require('express-session');
 
+var AzureTablesStoreFactory = require('connect-azuretables')(session);
+var options = {table: 'sessionTable2',
+            sessionTimeOut: 720
+}; // <-- connect-azuretables options go here
+
+
 const initializePassport = require('./passport-config')
 initializePassport(
     passport,
@@ -49,12 +55,16 @@ conn.query = util.promisify(conn.query).bind(conn);
 app.set('view engine','ejs')
 app.use(express.urlencoded({ extended: false}))
 app.use(flash())
-app.use(session({
-    secret:  'secret',
-    resave: false,
-    saveUninitialized: false
-}))
+// app.use(session({
+//     secret:  'secret',
+//     resave: false,
+//     saveUninitialized: false
+// }))
 
+app.use(session({ store: AzureTablesStoreFactory.create(options),
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false}));
 
 app.use(passport.initialize())
 app.use(passport.session())
