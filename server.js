@@ -54,7 +54,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
-// app.use(session({ secret: 'secret' }));
+
+
 app.use(passport.initialize())
 // app.use(passport.session())
 conn.connect(function(err){
