@@ -12,7 +12,7 @@ const bcrypt = require('bcrypt')
 const SQL = require('sql-template-strings')
 const passport = require('passport')
 const flash = require('express-flash')
-const session= require('express-session')
+var session = require('cookie-session');
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -56,7 +56,7 @@ app.use(session({
 }))
 // app.use(session({ secret: 'secret' }));
 app.use(passport.initialize())
-// app.use(passport.session())
+app.use(passport.session())
 conn.connect(function(err){
     if (err) {
         console.log("error connecting: " + err.stack);
