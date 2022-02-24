@@ -1,6 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "appService.defaultWebAppToDeploy": "/subscriptions/e6ea8cea-8bbd-4254-9eae-0ea319b32632/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/OnlyInvestMents",
     "appService.deploySubpath": ".",
-    "editor.minimap.maxColumn": 100
+    "editor.minimap.maxColumn": 100,
+    "appService.defaultWebAppToDeploy": "/subscriptions/3c99848c-d0e6-499c-b98a-dab1c9030828/resourceGroups/Pruebas/providers/Microsoft.Web/sites/OnlyInvestmentsMx"
 }
