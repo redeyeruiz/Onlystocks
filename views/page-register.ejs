@@ -491,9 +491,12 @@
 				<div class="col-sm-12 col-lg-6 offset-lg-3">
 					<div class="sign_up_form inner_page">
 						<div class="heading">
-							<h3 class="text-center">Register to start learning</h3>
+							<h3 class="text-center">Register to start  learning</h3>
 							<p class="text-center">Have an account? <a class="text-thm" href="/login">Login</a></p>
 						</div>
+						<% if (mssg) { %>
+							<div class="allert alert-danger" role="alert"> <%= mssg %> </div> 
+						  <% } %>
 						<div class="details">
 							<form action="/register" method="POST">
 								<div>	
@@ -506,7 +509,7 @@
 									<input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
 								</div>
 								<div class="form-group">
-							    	<input type="password" class="form-control"  placeholder="Confirm Password">
+							    	<input type="password" id="password2" name="password2" class="form-control"  placeholder="Confirm Password">
 								</div>
 								
 								<div class="form-group custom-control custom-checkbox">

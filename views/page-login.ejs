@@ -495,12 +495,13 @@
 					<div class="login_form inner_page">
 						<form action="/login" method='POST'>
 							<div class="heading">
-								<h3 class="text-center">Login to your account </h3>
+								<h3 class="text-center">Login to  your account </h3>
 								<p class="text-center">Don't have an account? <a class="text-thm" href="/register">Sign Up!</a></p>
 							</div>
-							<% if(messages.error) {%>
-								<% messages.error %>
-							<% } %>
+							
+							<% if (messages.error) { %>
+								<%= messages.error %>
+							  <% } %>
 
 							 <div class="form-group">
 						    	<input type="email" class="form-control" id="email" name="email" placeholder="Email Address">

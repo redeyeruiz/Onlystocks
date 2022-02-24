@@ -17,7 +17,7 @@
 <!-- Favicon -->
 <link href="/images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="/images/favicon.ico" sizes="128x128" rel="shortcut icon" />
-
+<script type="module" src="/customJs/cart.js" async></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -501,45 +501,34 @@
 								    	<th class="cartm_title">Price</th>
 								    	<th class="cartm_title">Quantity</th>
 								    	<th class="cartm_title">Total</th>
+										<th class="cartm_remove"></th>
 								    </tr>
 							  	</thead>
-							  	<tbody class="table_body">
-								    <tr>
-								    	<th scope="row">
-								    		<ul class="cart_list">
-								    			<li class="list-inline-item pr15"><a href="#"><img src="/images/shop/close.png" alt="close.png"></a></li>
-								    			<li class="list-inline-item pr20"><a href="#"><img src="/images/shop/shopping_cart.jpg" alt="shopping_cart.jpg"></a></li>
-								    			<li class="list-inline-item"><a class="cart_title" href="#">Introduction Web Design <br> with HTML</a></li>
-								    		</ul>
-								    	</th>
-								    	<td>$99.00</td>
-								    	<td><input class="cart_count text-center" placeholder="4" type="number"></td>
-								    	<td class="cart_total">$499.00</td>
-								    </tr>
-								    <tr>
-								    	<th scope="row">
-								    		<ul class="cart_list">
-								    			<li class="list-inline-item pr15"><a href="#"><img src="/images/shop/close.png" alt="close.png"></a></li>
-								    			<li class="list-inline-item pr20"><a href="#"><img src="/images/shop/shopping_cart.jpg" alt="shopping_cart.jpg"></a></li>
-								    			<li class="list-inline-item"><a class="cart_title" href="#">Designing a Responsive <br> Mobile Website with Muse</a></li>
-								    		</ul>
-								    	</th>
-								    	<td>$99.00</td>
-								    	<td><input class="cart_count text-center" placeholder="4" type="number"></td>
-								    	<td class="cart_total">$499.00</td>
-								    </tr>
-								    <tr>
-								    	<th scope="row">
-								    		<ul class="cart_list">
-								    			<li class="list-inline-item pr15"><a href="#"><img src="/images/shop/close.png" alt="close.png"></a></li>
-								    			<li class="list-inline-item pr20"><a href="#"><img src="/images/shop/shopping_cart.jpg" alt="shopping_cart.jpg"></a></li>
-								    			<li class="list-inline-item"><a class="cart_title" href="#">Seo Book</a></li>
-								    		</ul>
-								    	</th>
-								    	<td>$99.00</td>
-								    	<td><input class="cart_count text-center" placeholder="4" type="number"></td>
-								    	<td class="cart_total">$499.00</td>
-								    </tr>
+							  	<tbody class="table_body cart-items">
+									<% if (locals.items) { %>
+
+										<% items.forEach(function(item){ %>
+											<tr class="cart-row">
+												<th scope="row">
+													<ul class="cart_list">
+														<li class="list-inline-item pr15"><a href="#"><img src="/images/shop/close.png" alt="close.png"></a></li>
+														<li class="list-inline-item pr20"><a href="#"><img src="/images/shop/shopping_cart.jpg" alt="shopping_cart.jpg"></a></li>
+														<li class="list-inline-item"><a class="cart_title" href="#"><%= item.nom_grupo %><br> with HTML</a></li>
+													</ul>
+												</th>
+												
+												
+												<td class="item-price" >$<%= item.precio %></td>
+												<!-- <td><input class="cart_count text-center"  type="number"></td> -->
+												<td>1</td>
+												<td class="cart_total">$<%= item.precio %></td>
+												<td>
+													<button id="_<%= item.id_grupo %>" class="btn btn-danger btn-sm t" type="button">REMOVE</button>
+												</td>
+												
+											</tr>
+										<% }) %>
+									<% } %>
 							  	</tbody>
 							</table>
 						</form>
@@ -558,12 +547,12 @@
 					<div class="order_sidebar_widget mb30">
 						<h4 class="title">Cart Totals</h4>
 						<ul>
-							<li class="subtitle"><p>Subtotal <span class="float-right">$2,590.00</span></p></li>
-							<li class="subtitle"><p>Total <span class="float-right totals color-orose">$3,589.00</span></p></li>
+							<li class="subtitle "><p>Subtotal <span class="float-right">$2,590.00</span></p></li>
+							<li class="subtitle "><p>Total <span class="float-right totals color-orose total">$0</span></p></li>
 						</ul>
 					</div>
 					<div class="ui_kit_button payment_widget_btn">
-						<button type="button" class="btn dbxshad btn-lg btn-thm3 circle btn-block">Proceed To Checkout</button>
+						<button type="button" class="btn dbxshad btn-lg btn-thm3 circle btn-block btn-checkout">Proceed To Checkout</button>
 					</div>
 				</div>
 			</div>

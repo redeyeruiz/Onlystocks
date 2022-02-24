@@ -8,11 +8,11 @@ function initialize(passport, getUserByEmail, getUserById) {
         
         
         const user = await getUserByEmail(email)
-        // console.log('user')
-        // console.log(user)
-      if (user == null) {
+        // console.log('user passport confing: ' + user.name)
         
-        return done(null, false, { message: 'No user with that email' })
+      if (user == null) {
+        console.log('no user with that email')
+        return done(null, false, { message: 'La contraseña o el correo son incorrectos' })
         
       }
   
@@ -21,7 +21,7 @@ function initialize(passport, getUserByEmail, getUserById) {
         if (await bcrypt.compare(password, user.password)) {
             return done(null, user)
         } else {
-          return done(null, false, { message: 'Password incorrect' })
+          return done(null, false, { message: 'La contraseña o el correo son incorrectos' })
         }
       } catch (e) {
         return done(e)
