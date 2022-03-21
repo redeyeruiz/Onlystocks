@@ -4,7 +4,7 @@ if(process.env.NODE_ENV !== 'production') {
   
 const express = require ('express')
 const app = express()
-const port = process.env.PORT || 3030
+const port = process.env.PORT || 3039
 const stripeSecretKey= process.env.STRIPE_SECRET_KEY
 const stripePublicKey= process.env.STRIPE_PUBLIC_KEY
 
@@ -54,9 +54,9 @@ initializePassport(
 
 
 // AZURE DB CONNECTION
-const conn=mysql.createConnection({host:"onlyinvestments.mysql.database.azure.com",
-user:"lonelyadmin", 
-password:"Onlyfans!", 
+const conn=mysql.createConnection({host:"localhost",
+user:"sqluser", 
+password:"password", 
 database:"Onlyinvestments", 
 port:3306, 
 ssl:true
@@ -86,6 +86,8 @@ app.use(session({ store: AzureTablesStoreFactory.create(options),
     saveUninitialized: false}));
 
 app.use(passport.initialize())
+
+
 app.use(passport.session())
 conn.connect(function(err){
     if (err) {
