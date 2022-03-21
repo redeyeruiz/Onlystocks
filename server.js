@@ -164,6 +164,7 @@ async function insertRecords  (insertQuery){
   } 
 
 }
+
 //STRIPE
 
 
@@ -278,8 +279,7 @@ app.get('/orden-tienda', checkAuthenticated, (req, res) =>{
 })
 
 app.get('/tienda', checkAuthenticated, async (req, res) =>{
-  const query= (SQL
-    `SELECT * FROM grupo LIMIT 3`)
+  const query= (SQL    `SELECT * FROM grupo LIMIT 3`)
   var items = await getRecords(query)
 
   if( items != null && items.length > 0){
@@ -369,8 +369,7 @@ app.post('/register' ,checkNotAuthenticated, async (req, res) => {
     res.redirect('/register?valid='+ "Las contraseñas deben coincidir")
   }else  {
 
-    const sqlInsert = (SQL
-      `INSERT INTO USERS (name, email, password, creador)
+    const sqlInsert = (SQL `INSERT INTO USERS (name, email, password, creador)
             VALUES (${name}, ${email}, ${hashedPassword}, ${creador})`
     )
 
@@ -381,7 +380,7 @@ app.post('/register' ,checkNotAuthenticated, async (req, res) => {
       res.redirect('/register?valid='+ "ese correo ya esta asociado con alguna cuenta")
     } else if (errCode =="ER_BAD_NULL_ERROR") res.redirect('/register?valid='+ "campo vacio o con valores incorrecto")
 
-
+    console.log(errCode)
 
 
     if(errCode == "SUCCESS") {
@@ -568,8 +567,7 @@ app.post('/create-checkout-session',  async (req,res) =>{
 //     const query= (SQL
 
 //     `SELECT *FROM users `
-//     )
-//     const  res =  await getRecords(query)
+//     ) const  res =  await getRecords(query)
 //     console.log(res)
 // }
 // recordGetTest()
