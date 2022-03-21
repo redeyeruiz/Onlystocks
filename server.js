@@ -1,10 +1,30 @@
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
+process.on('unhandledRejection', (error, promise) => {
+  console.log(' Oh Lord! We forgot to handle a promise rejection here: ', promise);
+  console.log(' The error was: ', error );
+});
+
+process.on('uncaughtException', (error)  => {
+   
+    console.log('Oh my god, something terrible happened: ',  error);
+
+    process.exit(1); // exit application 
+
+})
+
+process.on('SIGTERM', (error)  => {
+   
+    console.log('Not good, processes killed',  error);
+
+    process.exit(1); // exit application 
+
+})
 
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3036
+const port = process.env.PORT || 3040
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
 
@@ -309,7 +329,7 @@ app.get('/login', checkNotAuthenticated, (req, res) =>{
   res.render('page-login.ejs')
 })
 
-app.get('/register', (req, res) =>{
+app.get('/register', checkNotAuthenticated , (req, res) =>{
   res.render('page-register.ejs', { mssg : req.query.valid})
 })
 
