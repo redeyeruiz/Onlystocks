@@ -24,8 +24,8 @@ process.on('SIGTERM', (error)  => {
 
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3040
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY
+
+const port = process.env.PORT || 3036
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
 
 const path = require('path')
@@ -69,6 +69,7 @@ initializePassport(
 )
 
 // AZURE DB CONNECTION
+
 const conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -102,6 +103,8 @@ app.use(session({
   saveUninitialized: false}));
 
 app.use(passport.initialize())
+
+
 app.use(passport.session())
 conn.connect(function(err){
   if (err) {
